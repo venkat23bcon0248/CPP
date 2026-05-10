@@ -1,19 +1,40 @@
- Function       What it does            Code Example                                                       Output                
- 
-`length()`      Counts characters       `string s="Vivek"; cout<<s.length();`                                `5`                   
- `size()`       Same as length          `string s="Hello"; cout<<s.size();`                                  `5`                   
- `append()`     Adds text at end        `string s="Hello"; s.append(" World"); cout<<s;`                   `Hello World`         
- `+`            Joins strings           `string a="Good"; string b="Morning"; cout<<a+b;`                  `GoodMorning`         
- `at()`         Access character        `string s="Apple"; cout<<s.at(1);`                                 `p`                   
- `substr()`     Gets part of string     `string s="Programming"; cout<<s.substr(0,4);`                     `Prog`                
- `find()`       Finds position          `string s="Vivek"; cout<<s.find("e");`                             `3`                   
- `erase()`      Deletes characters      `string s="Hello"; s.erase(1,2); cout<<s;`                         `Hlo`                 
- `clear()`      Removes all text        `string s="Hi"; s.clear(); cout<<s;`                               `(empty output)`      
- `empty()`      Checks empty or not     `string s=""; cout<<s.empty();`                                    `1`                   
- `replace()`    Replaces text           `string s="Hello"; s.replace(0,2,"Hi"); cout<<s;`                 `Hillo`               
- `insert()`     Inserts text            `string s="Hllo"; s.insert(1,"e"); cout<<s;`                       `Hello`               
- `compare()`    Compares strings        `string a="abc"; string b="abc"; cout<<a.compare(b);`              `0`                   
- `push_back()`  Adds one character      `string s="Hell"; s.push_back('o'); cout<<s;`                      `Hello`               
- `pop_back()`   Removes last character  `string s="Hello"; s.pop_back(); cout<<s;`                         `Hell`                
- `getline()`    Takes full line input   `getline(cin,s);`                                                  `Full sentence input` 
- `swap()`       Exchanges two strings   `string a="Hello"; string b="World"; a.swap(b); cout<<a<<" "<<b;`  `World Hello`         
+
+
+╔══════════════════╦══════════════════════════════╦══════════════════════════════════════════════════════════════╦════════════════════╗
+║ 🔧 FUNCTION      ║ 💡 WHAT IT DOES             ║ 🖥️ EXAMPLE                                                   ║ ✅ OUTPUT          ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 📏 length()      ║ Counts characters 📚        ║ string s="Vivek"; cout<<s.length();                         ║ 5️⃣                ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 📐 size()        ║ Same as length ✨           ║ string s="Hello"; cout<<s.size();                           ║ 5️⃣                ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ ➕ append()      ║ Adds text at end 📝         ║ string s="Hello"; s.append(" World");                       ║ Hello World 🌍     ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 🔗 +             ║ Joins strings 🤝           ║ string a="Good"; string b="Morning"; cout<<a+b;            ║ GoodMorning 🌞     ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 👉 at()          ║ Access character 🔍         ║ string s="Apple"; cout<<s.at(1);                            ║ p 🍎               ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ ✂️ substr()      ║ Gets part of string 🧩      ║ string s="Programming"; cout<<s.substr(0,4);               ║ Prog 🎯            ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 🔍 find()        ║ Finds position 📍           ║ string s="Vivek"; cout<<s.find("e");                        ║ 3️⃣                ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ ❌ erase()       ║ Deletes characters 🗑️       ║ string s="Hello"; s.erase(1,2);                             ║ Hlo 😵             ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 🧹 clear()       ║ Removes all text 🚫         ║ string s="Hi"; s.clear();                                   ║ (empty) 👻         ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ ❓ empty()       ║ Checks empty or not 🤔      ║ string s=""; cout<<s.empty();                               ║ 1️⃣                ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 🔄 replace()     ║ Replaces text ♻️            ║ string s="Hello"; s.replace(0,2,"Hi");                      ║ Hillo 😎           ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 📥 insert()      ║ Inserts text ➕             ║ string s="Hllo"; s.insert(1,"e");                           ║ Hello ❤️           ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ ⚖️ compare()     ║ Compares strings 🆚         ║ string a="abc"; string b="abc"; cout<<a.compare(b);        ║ 0️⃣                ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ ⬆️ push_back()   ║ Adds one character 🔤       ║ string s="Hell"; s.push_back('o');                          ║ Hello 😍           ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ ⬅️ pop_back()    ║ Removes last character 🔚   ║ string s="Hello"; s.pop_back();                             ║ Hell 😶            ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 📝 getline()     ║ Takes full line input 📖    ║ getline(cin,s);                                              ║ Full sentence 💬   ║
+╠══════════════════╬══════════════════════════════╬══════════════════════════════════════════════════════════════╬════════════════════╣
+║ 🔄 swap()        ║ Exchanges two strings 🔃    ║ string a="Hello"; string b="World"; a.swap(b);              ║ World Hello 🌎     ║
+╚══════════════════╩══════════════════════════════╩══════════════════════════════════════════════════════════════╩════════════════════╝
+
