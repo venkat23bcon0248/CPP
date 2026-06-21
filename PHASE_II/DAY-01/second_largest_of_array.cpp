@@ -1,6 +1,6 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-int main(){
+int main() {
     int n;
     cin >> n;
     int arr[n];
@@ -18,16 +18,16 @@ int main(){
         }
     }
 
-    int min = arr[0];
+    int second_max = arr[0];
     for ( int i = 1; i<n; i++){
-        if (arr[i] < min){
-            min = arr[i];
+        if (arr[i] > second_max && arr[i] < max){
+            second_max = arr[i];
         }
         else{
-            min = min;
+            second_max = second_max;
         }
     }
-    cout << "Maximum element: " << max << endl;
-    cout << "Minimum element: " << min << endl;
+    cout << "Second Maximum element: " << second_max << endl;
     return 0;
+    
 }
